@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  z-index: 99;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid brown;
+}
+
+section#banner {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
+section#banner .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#banner h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 5rem;
+}
+
+section#banner h4 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: .9px;
+}
+
+section#banner .arrow-down {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 17px solid white;
+  border-left: 17px solid transparent;
+  border-right: 17px solid transparent;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateY(-50%);
+  animation-duration: 1.4s;
+}
+
+
+/*Search*/
+section#search {
+  background-image: url('https://picjumbo.com/wp-content/uploads/baker-beach-with-golden-gate-bridge-san-francisco-california_free_stock_photos_picjumbo_HNCK4264-2210x1474.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+section#search .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(117, 115, 115);
+  opacity: .2;
+}
+
+section#search h1 {
+  text-shadow: 1px 1px rgb(141, 141, 141);
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+section#search .form-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section#search form {
+  background: rgba(117, 116, 116, 0.7);
+  padding: 15px;
+}
+
+section#search #search-input,
+section#search #search-input:focus {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+}
+
+section#search .btn {
+  border-radius: 0;
+}
+
+::placeholder {
+  color: white;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: white;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: white;
+}
