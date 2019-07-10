@@ -1,13 +1,18 @@
 const express = require('express')
-const app = express()
+const exphbs = require('express-handlebars')
 
+const app = express()
 const port = 3000
+
+// setup handlebars
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
+app.set('view engine', 'handlebars')
 
 // given path to serve static files
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.send('landing page')
+  res.render('index')
 })
 
 app.listen(port, () => {
