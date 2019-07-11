@@ -71,16 +71,16 @@ section#search .overlay {
 
 section#search h1 {
   text-shadow: 1px 1px rgb(141, 141, 141);
-  font-size: 5rem;
+  font-size: 3.6rem;
   font-weight: 300;
 }
 
 section#search .form-container {
   position: absolute;
   top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 40%;
   width: 288px;
+  animation-delay: .4s;
 }
 
 section#search form {

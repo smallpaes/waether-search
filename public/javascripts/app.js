@@ -3,6 +3,7 @@ const searchInput = document.querySelector('input')
 const infoTitle = document.querySelector('.form-bottom h6')
 const infoContent = document.querySelector('.form-bottom p')
 const formBottom = document.querySelector('.form-bottom')
+const formContainer = document.querySelector('.form-container')
 weatherForm.addEventListener('submit', (event) => {
   event.preventDefault()
   const location = searchInput.value
@@ -26,4 +27,14 @@ weatherForm.addEventListener('submit', (event) => {
         })
     })
 
+})
+
+
+window.addEventListener('scroll', event => {
+  let searchSection = document.getElementById('search')
+  let bottomPosition = window.scrollY + window.innerHeight
+
+  if (bottomPosition >= searchSection.offsetTop) {
+    formContainer.classList.add('jackInTheBox', 'animated')
+  }
 })
