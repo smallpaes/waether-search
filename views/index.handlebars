@@ -16,9 +16,16 @@
   <div class="overlay"></div>
   <div class="form-container">
     <h1 class="text-center text-white">City</h1>
-    <form class="position-relative text-center d-flex mt-4">
-      <input type="text" id="search-input" placeholder="Taipei" class="mr-2">
-      <button type="submit" class="btn btn-success">Search</button>
+    <form class="position-relative text-center d-flex flex-column mt-4">
+      <div class="form-top">
+        <input type="text" id="search-input" placeholder="Taipei" class="mr-2" required>
+        <button type="submit" class="btn btn-success">Search</button>
+      </div>
+      <div class="form-bottom d-none">
+        <hr>
+        <h6></h6>
+        <p></p>
+      </div>
     </form>
   </div>
 </section>

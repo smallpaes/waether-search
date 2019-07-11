@@ -66,7 +66,7 @@ section#search .overlay {
   bottom: 0;
   width: 100%;
   background: rgb(117, 115, 115);
-  opacity: .2;
+  opacity: .3;
 }
 
 section#search h1 {
@@ -80,6 +80,7 @@ section#search .form-container {
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
+  width: 288px;
 }
 
 section#search form {
@@ -110,4 +111,18 @@ section#search .btn {
 
 :-ms-input-placeholder { /* Internet Explorer */
   color: white;
+}
+
+.form-bottom h6 {
+  color: antiquewhite;
+  font-weight: 800;
+}
+
+.form-bottom p {
+  color: antiquewhite;
+  font-weight: 100;
+}
+
+hr {
+  border-color: rgb(173, 170, 170);
 }
