@@ -3,6 +3,7 @@ const exphbs = require('express-handlebars')
 const request = require('request')
 const geocode = require('./geocode')
 const forecast = require('./forecast')
+if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 
 const app = express()
 const port = 3000
