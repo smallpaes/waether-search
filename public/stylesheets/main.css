@@ -10,33 +10,30 @@ nav {
   z-index: 99;
 }
 
-section {
-  width: 100%;
-  height: 100vh;
-  border: 1px solid brown;
-}
-
 section#banner {
+  height: 100vh;
   background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 section#banner .title {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
 }
 
 section#banner h1 {
   color: white;
   font-weight: 100;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 section#banner h4 {
   color: white;
   font-weight: 600;
   letter-spacing: .9px;
+  font-size: .8em;
 }
 
 section#banner .arrow-down {
@@ -52,12 +49,33 @@ section#banner .arrow-down {
   animation-duration: 1.4s;
 }
 
+/*About*/
+section#about {
+  background-color: rgb(236, 234, 234);
+}
+
+.about-title {
+  font-weight: 200;
+  color: rgb(80, 79, 79);
+  font-size: 2.5rem;
+}
+
+.instruction {
+  margin: 3rem 0;
+  width: 290px;
+  color: rgb(80, 79, 79);
+}
+
+.instruction i {
+  color: #17a2b8;
+}
 
 /*Search*/
 section#search {
   background-image: url('https://picjumbo.com/wp-content/uploads/baker-beach-with-golden-gate-bridge-san-francisco-california_free_stock_photos_picjumbo_HNCK4264-2210x1474.jpg');
   background-size: cover;
   background-position: center;
+  height: 650px;
 }
 
 section#search .overlay {
@@ -76,9 +94,6 @@ section#search h1 {
 }
 
 section#search .form-container {
-  position: absolute;
-  top: 30%;
-  left: 40%;
   width: 288px;
   animation-delay: .4s;
 }
@@ -126,3 +141,61 @@ section#search .btn {
 hr {
   border-color: rgb(173, 170, 170);
 }
+
+@media screen and (min-width: 540px) {
+  
+  section#banner h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 3.5rem;
+  }
+
+  section#banner h4 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: .9px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 720px) {
+
+  section#banner h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 4.3rem;
+  }
+
+  section#banner h4 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: .9px;
+    font-size: 1.3em;
+  }
+
+  /*About*/
+  .instruction {
+    width: 400px;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+
+  section#banner h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 5.3rem;
+  }
+
+  section#banner h4 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: .9px;
+    font-size: 1.6em;
+  }
+}
+

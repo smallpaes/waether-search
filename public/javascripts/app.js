@@ -31,8 +31,16 @@ weatherForm.addEventListener('submit', (event) => {
 
 
 window.addEventListener('scroll', event => {
-  let searchSection = document.getElementById('search')
-  let bottomPosition = window.scrollY + window.innerHeight
+  const searchSection = document.getElementById('search')
+  const aboutSection = document.getElementById('about')
+  const bottomPosition = window.scrollY + window.innerHeight
+
+  if (bottomPosition >= aboutSection.offsetTop) {
+    document.querySelectorAll('#about .row div').forEach(div => {
+      div.classList.add('slideInLeft', 'animated')
+    })
+
+  }
 
   if (bottomPosition >= searchSection.offsetTop) {
     formContainer.classList.add('jackInTheBox', 'animated')
